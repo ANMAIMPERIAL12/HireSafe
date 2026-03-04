@@ -5,8 +5,8 @@ from flask import Flask, request, jsonify, render_template
 app = Flask(__name__)
 
 # load model and features
-model = joblib.load("../hiresafe_model.pkl")
-features = joblib.load("../model_features.pkl")
+model = joblib.load("hiresafe_model.pkl")
+features = joblib.load("model_features.pkl")
 
 
 @app.route("/")
