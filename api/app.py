@@ -6,8 +6,8 @@ app = Flask(__name__)
 
 # load model and features
 model = joblib.load("hiresafe_model.pkl")
-features = joblib.load("model_features.pkl")
 
+features = joblib.load("model_features.pkl")
 
 @app.route("/")
 def home():
